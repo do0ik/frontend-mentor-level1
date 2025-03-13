@@ -1,7 +1,10 @@
 import styles from "./FourCard.module.css";
 import Card from "../components/Card";
+import { useNavigate } from "react-router-dom";
 
 function FourCard() {
+
+    const navigate = useNavigate();
 
     const leftCards = [
         {
@@ -34,6 +37,7 @@ function FourCard() {
 
     return (
         <div className={styles.main}>
+            <span onClick={() => navigate('/ir')} style={{position: 'fixed', top: '10px', left: '10px', cursor: 'pointer'}}>InteractiveRating</span>
 
             <div className={styles.topCard}>
                 <h1 className={styles.topTitle}>
@@ -85,6 +89,7 @@ function FourCard() {
                     }
                 </div>
             </div>
+            
         </div>
     )
 }

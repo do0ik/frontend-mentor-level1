@@ -2,19 +2,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     background-color: rgb(240, 240, 240);
     font-family: 'Poppins';
     color: hsl(234, 12%, 34%);
 
-    padding: 70px 20px;
+    padding: 0 20px;
     min-height: 100vh;
 }
 
 .topCard {
     text-align: center;
     max-width: 560px;
-    margin-bottom: 70px;
+    margin: 70px 0;
 }
 
 .topTitle {
@@ -29,6 +30,8 @@
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    margin-bottom: 70px;
 }
 
 .centerCards {
@@ -40,18 +43,13 @@
 .sideCards {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
-
-    padding-top: 130px;
 }
 
 @media screen and (max-width: 992px) {    
     .cardContainer {
         flex-direction: column;
-    }
-
-    .sideCards {
-        padding-top: 0;
     }
 }
 
